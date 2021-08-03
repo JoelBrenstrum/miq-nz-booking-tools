@@ -15,6 +15,7 @@
   "dependencies": {
     "puppeteer": "^5.5.0",
     "puppeteer-extra": "^3.1.16",
+    "puppeteer-extra-plugin-recaptcha": "^3.4.0",
     "puppeteer-extra-plugin-stealth": "^2.7.8"
   },
   "devDependencies": {

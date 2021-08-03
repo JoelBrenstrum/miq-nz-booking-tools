@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
@@ -7,42 +8,44 @@
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>MIQ Booking Assistance</title>
 </head>
+
 <body>
-<h1>MIQ Booking Assistance</h1>
-<hr/>
-<p id="status">Starting...</p>
-<p id="status-count"></p>
-<hr/>
-<div>
-    <h3>Settings:</h3>
-    <p>Find any date:</p>
-    <input type="radio" id="findAnyDate_yes" name="findAnyDate" checked>
-    <label for="findAnyDate_yes">Yes</label><br>
-    <input type="radio" id="findAnyDate_no" name="findAnyDate">
-    <label for="findAnyDate_no">No</label><br>
-</div>
-<div id="date-div" style="display: none !important;">
-    <br/>
-    <label for="date-input">Date/Month to find:</label>
-    <input type="date" id="date-input">
-    <input type="button" id="date-button" value="Add Date">
-    <input type="button" id="month-button" value="Add Month">
-    <input type="button" id="clear-button" value="Clear">
-    <div style="float: left;">
-        <p>Dates:</p>
-        <ul id="date-list">
-        </ul>
+    <h1>MIQ Booking Assistance</h1>
+    <hr />
+    <p id="status">Starting...</p>
+    <p id="status-count"></p>
+    <hr />
+    <div>
+        <h3>Settings:</h3>
+        <p>Find any date:</p>
+        <input type="radio" id="findAnyDate_yes" name="findAnyDate">
+        <label for="findAnyDate_yes">Yes</label><br>
+        <input type="radio" id="findAnyDate_no" name="findAnyDate" checked>
+        <label for="findAnyDate_no">No</label><br>
     </div>
-</div>
-<div>
-    <br/>
-    <label for="refresh">Page Refresh Time (s):</label>
-    <input type="number" id="refresh" value="5">
-</div>
-<hr/>
-<div>
-    <input type="button" id="reset-button" value="Restart Search">
-</div>
+    <div id="date-div">
+        <br />
+        <label for="date-input">Date/Month to find:</label>
+        <input type="date" id="date-input">
+        <input type="button" id="date-button" value="Add Date">
+        <input type="button" id="month-button" value="Add Month">
+        <input type="button" id="clear-button" value="Clear">
+        <div style="float: left;">
+            <p>Dates:</p>
+            <ul id="date-list">
+            </ul>
+        </div>
+    </div>
+    <div>
+        <br />
+        <label for="refresh">Page Refresh Time (s):</label>
+        <input type="number" id="refresh" value="5">
+    </div>
+    <hr />
+    <div>
+        <input type="button" id="reset-button" value="Restart Search">
+    </div>
 </body>
 <script src="./renderer.js"></script>
+
 </html>
